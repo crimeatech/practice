@@ -1,0 +1,18 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18.99">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #747e89;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>download_pdf_gray</title>
+  <g>
+    <rect class="cls-1" y="17.01" width="16" height="1.98"/>
+    <polygon class="cls-2" points="7.01 0 7.01 10.66 3.15 6.8 1.83 8.13 8 14.3 14.18 8.13 12.85 6.8 8.99 10.66 8.99 0 8 0 7.01 0"/>
+  </g>
+</svg>
