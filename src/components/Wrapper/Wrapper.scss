@@ -1,0 +1,17 @@
+@import '../../assets/_styles';
+.Wrapper{
+    font-family: $robo-font;
+    margin: 0 auto;
+    width: 1120px/1920px * 100%;
+    border: 1px solid black;
+}
+
+.Wrapper-bg-gradient{
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    width: 100%;
+    background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
+}
