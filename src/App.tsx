@@ -1,10 +1,10 @@
 import React from 'react';
 import Wrapper from "./components/Wrapper/Wrapper";
-
+import CardList from "./components/CardList/CardList"
 const App: React.FC = () => {
   return (
     <Wrapper>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iusto?</div>
+      <CardList/>
     </Wrapper>
   );
 }
