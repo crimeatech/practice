@@ -10,11 +10,11 @@ interface CardProps {
 class Card extends React.Component<CardProps, {}>{
     render(){
         return(
-            <div className="CardList-Card">
-                <img className="CardList-CardImg" src={img} alt="city"/>
-                <div className="CardList-CardInfo">
-                    <div className="CardList-CardTitle">{this.props.city}</div>
-                    <div className="CardList-CardPlaces"><span>{this.props.places}</span>  свободных мест</div>
+            <div className="Card">
+                <img className="Card-Image" src={img} alt="city"/>
+                <div className="Card-Info">
+                    <div className="Card-Title">{this.props.city}</div>
+                    <div className="Card-Places"><div className="Card-Places_Count">{this.props.places}</div>свободных мест</div>
                 </div>
             </div>
         );
