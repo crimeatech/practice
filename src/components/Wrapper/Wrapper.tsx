@@ -6,6 +6,7 @@ class Wrapper extends React.Component{
         return (
             <Fragment>
                 <div className="Wrapper-bg-gradient"></div>
+                <div className="Wrapper-bg-white"></div>
                 <div className="Wrapper">
                     {this.props.children}
                 </div>

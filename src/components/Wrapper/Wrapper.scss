@@ -1,9 +1,9 @@
 @import '../../assets/_styles';
+@import '../../assets/_reset';
 .Wrapper{
     font-family: $robo-font;
     margin: 0 auto;
-    width: 1120px/1920px * 100%;
-    border: 1px solid black;
+    width: 1120px;
 }
 
 .Wrapper-bg-gradient{
@@ -15,3 +15,13 @@
     width: 100%;
     background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
 }
+
+.Wrapper-bg-white{
+    z-index: -1;
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: $body_bg-color;
+} 
