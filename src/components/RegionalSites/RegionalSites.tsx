@@ -11,7 +11,7 @@ class RegionalSites extends React.Component {
       return (
         <div>
         <div className="RegionalSites">
-               <span className="RegionalSites-Selected">Областные сайты</span>
+               <span className="RegionalSites-Selected">Областные сайт</span>
                </div>
                 <div className="RegionalSites-Drop" >
                   <ul>

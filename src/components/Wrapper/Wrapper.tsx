@@ -8,10 +8,11 @@ class Wrapper extends React.Component{
         return (
             <Fragment>
                 <div className="Wrapper-bg-gradient"></div>
+                <div className="Navigation-Top"><Navigation/></div>
                 <div className="Wrapper">
             
                     {this.props.children}
-                    <Navigation/>
+                
                    
                 </div>
             </Fragment>
