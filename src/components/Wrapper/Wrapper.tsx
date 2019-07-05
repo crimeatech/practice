@@ -1,5 +1,7 @@
 import React, { Fragment } from "react"
+import Navigation from "../Navigation/Navigation"
 import "./Wrapper.scss"
+
 
 class Wrapper extends React.Component{
     public render(){
@@ -7,9 +9,13 @@ class Wrapper extends React.Component{
             <Fragment>
                 <div className="Wrapper-bg-gradient"></div>
                 <div className="Wrapper">
+            
                     {this.props.children}
+                    <Navigation/>
+                   
                 </div>
             </Fragment>
+
             );
         }
 }

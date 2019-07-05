@@ -1,9 +1,10 @@
 @import '../../assets/_styles';
 .Wrapper{
     font-family: $robo-font;
-    margin: 0 auto;
-    width: 1120px/1920px * 100%;
-    border: 1px solid black;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1000px;
+    //border: 1px solid black;
 }
 
 .Wrapper-bg-gradient{
