@@ -1,10 +1,11 @@
 import React from 'react';
 import Wrapper from "./components/Wrapper/Wrapper";
-import CardList from "./components/CardList/CardList"
+import SearchBar from './components/SearchBar/SearchBar';
+
 const App: React.FC = () => {
   return (
     <Wrapper>
-      <CardList/>
+      <SearchBar/>
     </Wrapper>
   );
 }
