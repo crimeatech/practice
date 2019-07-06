@@ -44,9 +44,38 @@
         align-items: center;
     }
 }
+.RegionalSites a{
+    text-decoration: none;
+    color: #bdcbd8;
+    
+    }
+.RegionalSites:hover a{
+        text-decoration: none;
+        color:white;
+        
+        }
 .RegionalSites-Drop{
     visibility: hidden;
-    float: left;
+    transition: margin-left 0.5s ease 0s;
+}
+.RegionalSites-Drop-Show{
+    transition: margin-left 0.5s ease 0s;
+    visibility: visible;
+    margin-left:87px;
+   z-index: 1;
+    //width: 300px;
+   
+}
+.RegionalSites-Drop-Show li{
+    display: flex;
+    background-color: white;
+    font-size: 15px;
+    //text-decoration: none;
+    font-family: $robo-font;
+    padding: 8px 20px;
+    flex-direction: column;
+list-style-type: none;
+float: left;
 }
 .RegionalSites-Drop li{
     display: flex;
@@ -80,5 +109,12 @@ color: white;
     margin-right: 11px;
     align-items: center;
 }
+.RegionalSitesAndDrop{
+//display: flex;
+//flex-direction: column;
+//width: 250px;
+//height: 54px;
+float: left;
 
+}
 

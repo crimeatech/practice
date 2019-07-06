@@ -1,24 +1,34 @@
 import React  from 'react'
 import "./RegionalSites.scss"
 //interface MyComponentState { visible : boolean }
-class RegionalSites extends React.Component {
-  
+interface AppProps {someMyValue?: boolean}
+interface AppState {class?: string}
+class RegionalSites extends React.Component<AppProps,AppState> {
+  constructor(props: any){
+    super(props);
+    this.state={class: "RegionalSites-Drop"};
+    this.show = this.show.bind(this);
+  }
+    show(){
+     let className = (this.state.class==="RegionalSites-Drop")?"RegionalSites-Drop-Show":"RegionalSites-Drop";
+      this.setState({class: className});
     
+    }
 
     render() {
       //this.state.visible;
       
       return (
-        <div>
+        
+        <div className="RegionalSitesAndDrop">
         <div className="RegionalSites">
-               <span className="RegionalSites-Selected">Областные сайт</span>
+               <a href="#" className="RegionalSites-Selected" onClick={this.show}>Областные сайты</a>
                </div>
-                <div className="RegionalSites-Drop" >
-                  <ul>
+                <div className={this.state.class} ><ul>
                     <li>
-                      <a href="#">1</a>
-                      <a href="#">2</a>
-                      <a href="#">3</a>
+                      <a href="#">fbdsiufbdsifbdsibfds</a>
+                      <a href="#">dfgfdgdfgdfg</a>
+                      <a href="#">sdvnilvnsdlivnbvldsivbsdliv</a>
                     </li>
                   </ul>
                 </div>
@@ -34,6 +44,6 @@ class RegionalSites extends React.Component {
       });
     }*/
    }
+   
 export default RegionalSites;
 
-  
