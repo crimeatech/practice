@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Wrapper from "./components/Wrapper/Wrapper";
 import SearchBar from './components/SearchBar/SearchBar';
+import Footer from './components/Footer/Footer';
+import CardList from './components/CardList/CardList';
 
 const App: React.FC = () => {
   return (
-    <Wrapper>
-      <SearchBar/>
-    </Wrapper>
+    <Fragment>
+      <Wrapper>
+        <SearchBar/>
+        <CardList/>
+      </Wrapper>
+      <Footer/>
+    </Fragment>
   );
 }
 

@@ -14,7 +14,7 @@ export class DropDown extends Component<{},DropDownState> {
         this.state = {
             items: ["Детский сад 1", "Детский сад 2", "Детский сад 3"],
             selected : 0,
-            isOpened : true
+            isOpened : false
         };
     }
 
