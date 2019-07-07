@@ -1,0 +1,60 @@
+.Header-Logo{
+    display: flex;
+    //flex-wrap: nowrap;
+    
+    //flex-direction: column;
+    //border: 1px black solid;
+    height: 95px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(217, 222, 225);
+    float: left;
+    
+}
+.Header-Logo::before{
+display: inline-block;
+content: '';
+background-image: url(../../assets/Logo.png);
+width: 50px;
+height: 59px;
+margin-right: 20px;
+}
+
+.Header-Logo-Kindergarten {
+    
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+
+
+  }
+  .Header-Logo-Kindergarten a{
+    
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    width:100%;
+
+
+  }
+  .Header-Logo-Crimea {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(217, 222, 225);
+    line-height: 1.714;
+
+  }
+  .Header-NavBlock a{
+    text-decoration: none;
+  }
+
+  .Header-Logo-And-Text{
+      display: flex;
+      flex-direction: column;
+  }
