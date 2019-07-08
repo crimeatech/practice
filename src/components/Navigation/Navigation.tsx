@@ -1,8 +1,8 @@
 import React from 'react';
-import "./Navigation.scss"
 import RegionalSites from "../RegionalSites/RegionalSites";
 import UserCabinet from "../UserCabinet/UserCabinet";
 import ForSleeping from "../ForSleeping/ForSleeping";
+import "./Navigation.scss"
 class Navigation extends React.Component{
     public render(){
         return (

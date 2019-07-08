@@ -1,48 +1,77 @@
 @import '../../assets/_styles';
-.UserCabinet{
+
+.UserCabinet {
     position: relative;
-    font-family: $robo-font;
-   // margin-top: -10px;
-    margin-left: 1068px;
-    padding-left: 10px;
-    width: 170px;
-    height: 54px;
+
     display: flex;
+
     align-items: center;
+
+    width: 170px;
+
+    height: 54px;
+
+    margin-left: 1068px;
+
+    padding-left: 10px;
+
+    font-family: $robo-font;
+
     font-size: 14px;
-    //align-self: flex-end;
-    //display: inline-block;
+
     &::before {
         display: inline-block;
-        content: '';
-        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiAjZDlkZWUxOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDx0aXRsZT51c2VyX2dyYXk8L3RpdGxlPiAgPGcgaWQ9ImFjY291bnQtY2lyY2xlIj4gICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTAsMEExMCwxMCwwLDEsMCwyMCwxMCwxMCwxMCwwLDAsMCwxMCwwWm0wLDNhMywzLDAsMCwxLDMsMywzLDMsMCwwLDEtMywzQTMsMywwLDAsMSw3LDYsMywzLDAsMCwxLDEwLDNabTAsMTQuMkE3LjMsNy4zLDAsMCwxLDQsMTRjMC0yLDQtMy4xLDYtMy4xUzE2LDEyLDE2LDE0QTcuMyw3LjMsMCwwLDEsMTAsMTcuMloiLz4gIDwvZz48L3N2Zz4=) 50% 50% no-repeat;
-        box-shadow: 0 0 1px #f00;
+
         width: 20px;
+
         height: 20px;
+
         margin-right: 11px;
+
+        content: '';
+
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiAjZDlkZWUxOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDx0aXRsZT51c2VyX2dyYXk8L3RpdGxlPiAgPGcgaWQ9ImFjY291bnQtY2lyY2xlIj4gICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTAsMEExMCwxMCwwLDEsMCwyMCwxMCwxMCwxMCwwLDAsMCwxMCwwWm0wLDNhMywzLDAsMCwxLDMsMywzLDMsMCwwLDEtMywzQTMsMywwLDAsMSw3LDYsMywzLDAsMCwxLDEwLDNabTAsMTQuMkE3LjMsNy4zLDAsMCwxLDQsMTRjMC0yLDQtMy4xLDYtMy4xUzE2LDEyLDE2LDE0QTcuMyw3LjMsMCwwLDEsMTAsMTcuMloiLz4gIDwvZz48L3N2Zz4=) 50% 50% no-repeat;
+
+        box-shadow: 0 0 1px #f00;
+
     }
-    
-}
-.UserCabinet a{
-text-decoration: none;
-color: #bdcbd8;
 
 }
-.UserCabinet:hover{
-background-color: #033a78;
-color: white;
-}
-.UserCabinet:hover a{
+
+.UserCabinet a {
     text-decoration: none;
-    color:white;
-    
-    }
-    .UserCabinet:hover::before{
-        display: inline-block;
-        content: '';
-        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiAjZmZmOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDx0aXRsZT5Vc2VyX0hvdmVyPC90aXRsZT4gIDxnIGlkPSJhY2NvdW50LWNpcmNsZSI+ICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEwLDBBMTAsMTAsMCwxLDAsMjAsMTAsMTAsMTAsMCwwLDAsMTAsMFptMCwzYTMsMywwLDAsMSwzLDMsMywzLDAsMCwxLTMsM0EzLDMsMCwwLDEsNyw2LDMsMywwLDAsMSwxMCwzWm0wLDE0LjJBNy4zLDcuMywwLDAsMSw0LDE0YzAtMiw0LTMuMSw2LTMuMVMxNiwxMiwxNiwxNEE3LjMsNy4zLDAsMCwxLDEwLDE3LjJaIi8+ICA8L2c+PC9zdmc+) 50% 50% no-repeat;
-        box-shadow: 0 0 1px #f00;
-        width: 20px;
-        height: 20px;
-        margin-right: 11px;
-    }
+
+    color: #bdcbd8;
+
+}
+
+.UserCabinet:hover {
+    color: white;
+
+    background-color: #033a78;
+
+}
+
+.UserCabinet:hover a {
+    text-decoration: none;
+
+    color: white;
+
+}
+
+.UserCabinet:hover::before {
+    display: inline-block;
+
+    width: 20px;
+
+    height: 20px;
+
+    margin-right: 11px;
+
+    content: '';
+
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiAjZmZmOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDx0aXRsZT5Vc2VyX0hvdmVyPC90aXRsZT4gIDxnIGlkPSJhY2NvdW50LWNpcmNsZSI+ICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEwLDBBMTAsMTAsMCwxLDAsMjAsMTAsMTAsMTAsMCwwLDAsMTAsMFptMCwzYTMsMywwLDAsMSwzLDMsMywzLDAsMCwxLTMsM0EzLDMsMCwwLDEsNyw2LDMsMywwLDAsMSwxMCwzWm0wLDE0LjJBNy4zLDcuMywwLDAsMSw0LDE0YzAtMiw0LTMuMSw2LTMuMVMxNiwxMiwxNiwxNEE3LjMsNy4zLDAsMCwxLDEwLDE3LjJaIi8+ICA8L2c+PC9zdmc+) 50% 50% no-repeat;
+
+    box-shadow: 0 0 1px #f00;
+
+}
