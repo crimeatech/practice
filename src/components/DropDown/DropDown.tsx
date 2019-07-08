@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import { cn } from '@bem-react/classname';
 import "./DropDown.scss"
-import { directive } from '@babel/types';
 
 interface DropDownState {
     items: string[],
@@ -23,14 +23,15 @@ export class DropDown extends Component<{},DropDownState> {
     select = (e: React.MouseEvent<HTMLDivElement, MouseEvent>, item: string) => this.setState({selected: this.state.items.indexOf(item), isOpened: false});
 
     render() {
+        const cnDropDown = cn("DropDown");
         return (
-            <div className={"DropDown"+ (this.state.isOpened ? "_opened" : '')}>
-                <div className="DropDown-Selected">{this.state.items[this.state.selected]}</div>
-                <div className={"DropDown-Arrow" + (this.state.isOpened ? "_opened" : '')} onClick={this.toggle}></div>       
+            <div className={cnDropDown({opened: this.state.isOpened})}>
+                <div className={cnDropDown("Selected")}>{this.state.items[this.state.selected]}</div>
+                <div className={cnDropDown("Arrow", {opened: this.state.isOpened})} onClick={this.toggle}></div>       
                 {
                     this.state.isOpened && 
-                    <div className="DropDown-List">
-                        {this.state.items.map((item) => <div className="DropDown-ListItem" onClick={e => this.select(e, item)}>{item}</div>)}
+                    <div className={cnDropDown("List")}>
+                        {this.state.items.map((item) => <div className={cnDropDown("ListItem")} onClick={e => this.select(e, item)}>{item}</div>)}
                     </div>
                 }         
             </div>

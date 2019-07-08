@@ -1,6 +1,8 @@
 import React from "react"
-import "./CardList.scss"
+import { cn } from '@bem-react/classname';
 import Card from "../Card/Card"
+import "./CardList.scss"
+
 
 interface CardListState {
     cards: {city: string, places: number}[];
@@ -23,8 +25,9 @@ class CardList extends React.Component<{},CardListState>{
     }
 
     render(){
+        const cnCardList = cn("CardList");
         return(
-            <div className="CardList">
+            <div className={cnCardList()}>
                 {
                     this.state.cards.map((card) => 
                         <Card key={card.city} city={card.city} places={card.places}/>

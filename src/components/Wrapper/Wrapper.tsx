@@ -1,13 +1,15 @@
 import React, { Fragment } from "react"
+import { cn } from '@bem-react/classname';
 import "./Wrapper.scss"
 
 class Wrapper extends React.Component{
     public render(){
+        const cnWrapper=cn("Wrapper");
         return (
             <Fragment>
-                <div className="Wrapper-bg-gradient"></div>
-                <div className="Wrapper-bg-white"></div>
-                <div className="Wrapper">
+                <div className={cnWrapper("bg-gradient")}></div>
+                <div className={cnWrapper("bg-white")}></div>
+                <div className={cnWrapper()}>
                     {this.props.children}
                 </div>
             </Fragment>

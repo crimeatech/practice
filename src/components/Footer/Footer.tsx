@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
+import { cn } from '@bem-react/classname';
 import "./Footer.scss"
-import img from "../../assets/Лого кр течь.png"
+import img from "../../assets/krtechlogo.png"
 
 
 export class Footer extends Component {
     render() {
+        const cnFooter = cn("Footer");
         return (
-            <footer className="Footer">
-                <div className="Footer-Wrapper">
-                    <div className="Footer-Info">Разработано при поддержке Министрества образования, науки и молодежи Республики Крым и Министерства внутренней политики, информации и связи Республики Крым</div>
-                    <div className="Footer-Sign">
-                        <img src={img} className="Footer-Logo" alt="Крымтехнологии"/>
-                        <div className="Footer-Text">Разработка и поддержка ГУП РК «Крымтехнологии»</div>
+            <footer className={cnFooter()}>
+                <div className={cnFooter("Wrapper")}>
+                    <div className={cnFooter("Info")}>Разработано при поддержке Министрества образования, науки и молодежи Республики Крым и Министерства внутренней политики, информации и связи Республики Крым</div>
+                    <div className={cnFooter("Sign")}>
+                        <img src={img} className={cnFooter("Logo")} alt="Крымтехнологии"/>
+                        <div className={cnFooter("Text")}>Разработка и поддержка ГУП РК «Крымтехнологии»</div>
                     </div>
                 </div>
             </footer>
