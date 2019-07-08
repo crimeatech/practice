@@ -16,7 +16,7 @@ class Card extends React.Component<CardProps, {}>{
                 <img className={cnCard("Image")} src={img} alt="city"/>
                 <div className={cnCard("Info")}>
                     <div className={cnCard("Title")}>{this.props.city}</div>
-                    <div className={cnCard("Places")}><div className={cnCard("Places-Count")}>{this.props.places}</div>свободных мест</div>
+                    <div className={cnCard("Places")}><div className={cnCard("Count")}>{this.props.places}</div>свободных мест</div>
                 </div>
             </div>
         );
