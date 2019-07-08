@@ -15,18 +15,12 @@ class RegionalSites extends React.Component<AppProps,AppState,any> {
     //this.toggleContainer=React.createRef();
 
   }
-
-
-
-
     show(){
      var className = (this.state.class==="RegionalSites-Drop")?"RegionalSites-Drop-Show":"RegionalSites-Drop";
       this.setState({class: className});
       
-    
     }
 
-  
     render() {
       //this.state.visible;
       
@@ -40,9 +34,8 @@ class RegionalSites extends React.Component<AppProps,AppState,any> {
                 <div className={this.state.class} >
                  <ul>
                     <li>
-                      <a href="#">fbdsiufbdsifbdsibfds</a>
-                      <a href="#">dfgfdgdfgdfg</a>
-                      <a href="#">sdvnilvnsdlivnbvldsivbsdliv</a>
+                      <a href="#">Портал Правительства Республики Крым</a>
+                      
                     </li>
                   </ul>
                 </div>

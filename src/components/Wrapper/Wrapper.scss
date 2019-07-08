@@ -1,14 +1,10 @@
 @import '../../assets/_styles';
-
-.Wrapper {
-    width: 100%;
-
-    max-width: 1125px;
-
-    margin: 10px auto;
-
+@import '../../assets/_reset';
+.Wrapper{
     font-family: $robo-font;
-    //border: 1px solid black;
+    width: 100%;
+    margin: 10px auto;
+    width: 1120px;
 }
 
 .Wrapper-bg-gradient {
@@ -24,5 +20,15 @@
 
     height: 550px;
 
-    background: linear-gradient(to bottom, $high-grad-color, $low-grad-color);
+    background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
 }
+
+.Wrapper-bg-white{
+    z-index: -1;
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: $body_bg-color;
+} 
