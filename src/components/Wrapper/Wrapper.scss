@@ -1,27 +1,36 @@
 @import '../../assets/_styles';
 @import '../../assets/_reset';
+
 .Wrapper{
     font-family: $robo-font;
     margin: 0 auto;
-    width: 1120px;
+    width: 1120px;   
 }
 
-.Wrapper-bg-gradient{
-    z-index: -1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 550px;
-    width: 100%;
-    background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
-}
+.Background{
+    &-Top{  
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 550px;
+        width: 100%;
 
-.Wrapper-bg-white{
-    z-index: -1;
-    position: absolute;
-    top: 550px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    background-color: $body_bg-color;
-} 
+        &_gradient{
+            background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
+        }
+    }
+    
+    &-Bottom{      
+        z-index: -1;
+        position: absolute;
+        top: 550px;
+        left: 0px;
+        height: 534px;
+        width: 100%;
+
+        &_color_white{
+            background-color: $body_bg-color;
+        } 
+    }
+}

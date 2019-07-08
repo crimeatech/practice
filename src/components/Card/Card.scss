@@ -33,7 +33,7 @@
     }
 
     &-Title{
-        color: $title-color;
+        color: $dark-gray;
         font-size: 20px;
         font-weight: bold;
     }
@@ -42,11 +42,11 @@
         display: flex;
         margin-top: 50px;
         color: #747e89;
+    }
     
-        &_Count{
+    &-Count{
             font-weight: bold;
             margin-right: 14px;
-        }
     }
 }
 
