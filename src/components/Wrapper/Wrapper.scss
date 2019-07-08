@@ -4,25 +4,33 @@
 .Wrapper{
     font-family: $robo-font;
     margin: 0 auto;
-    width: 1120px;
+    width: 1120px;   
+}
 
-    &-bg-gradient{
+.Background{
+    &-Top{  
         z-index: -1;
         position: absolute;
         top: 0px;
         left: 0px;
         height: 550px;
         width: 100%;
-        background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
-    }
 
-    &-bg-white{
+        &_gradient{
+            background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
+        }
+    }
+    
+    &-Bottom{      
         z-index: -1;
         position: absolute;
         top: 550px;
         left: 0px;
         height: 534px;
         width: 100%;
-        background-color: $body_bg-color;
-    } 
+
+        &_color_white{
+            background-color: $body_bg-color;
+        } 
+    }
 }

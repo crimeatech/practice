@@ -5,10 +5,13 @@ import "./Wrapper.scss"
 class Wrapper extends React.Component{
     public render(){
         const cnWrapper=cn("Wrapper");
+        const cnBackground=cn("Background");
         return (
             <Fragment>
-                <div className={cnWrapper("bg-gradient")}></div>
-                <div className={cnWrapper("bg-white")}></div>
+                <div className={cnBackground()}>
+                    <div className={cnBackground("Top", {gradient: true})}></div>
+                    <div className={cnBackground("Bottom", {color: "white"})}></div>
+                </div>
                 <div className={cnWrapper()}>
                     {this.props.children}
                 </div>
