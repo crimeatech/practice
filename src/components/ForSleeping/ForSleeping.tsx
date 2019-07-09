@@ -2,10 +2,7 @@ import React  from 'react'
 import "./ForSleeping.scss"
 class ForSleeping extends React.Component {
   
-    
-
     render() {
-    
       
       return (
         <div className="ForSleeping">

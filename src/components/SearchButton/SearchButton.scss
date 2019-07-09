@@ -1,0 +1,18 @@
+@import '../../assets/_styles';
+.Button{
+    width: 155px;
+    height: 48px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.35);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    background-color: $search_button-color;
+    color: #fff;  
+    border-radius: 2px;
+    font-size: 16px;
+    margin: 9px;
+
+    &:hover{
+        background-color: #f25162;
+    }
+}

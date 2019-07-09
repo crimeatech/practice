@@ -1,0 +1,64 @@
+@import '../../assets/_styles';
+
+.DropDown{
+    width: 186px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 2px 0 0 2px;
+    color: $dark-gray;
+    
+    &_opened{
+        background-color: #004595;
+        color: #fff;
+        border-radius: 2px 0 0;
+    }
+
+    &-Selected{
+        width: 150px;
+        text-align: center;
+        color: inherit;
+    }
+
+    &-Arrow{
+        width: 12px;
+        height: 6px;
+        color: inherit;
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMiA2Ij4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICMzYjQyNTY7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHRpdGxlPmRyb3BfZG93bjwvdGl0bGU+ICA8ZyBpZD0iYXJyb3ctZHJvcC1kb3duIj4gICAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjAgMCA2IDYgMTIgMCAwIDAiLz4gIDwvZz48L3N2Zz4=) 50% 50% no-repeat;
+        
+        &_opened{
+            color: inherit;
+            background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMiA2Ij4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICNmZmY7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHRpdGxlPmRyb3BfdXA8L3RpdGxlPiAgPGcgaWQ9ImFycm93LWRyb3AtZG93biI+ICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMiA2IDYgMCAwIDYgMTIgNiIvPiAgPC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+        }
+
+        &:hover, &_opened:hover{
+            cursor: pointer;
+        }
+    }
+
+    &-List{
+        position: absolute; 
+        top: 64px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0px 21px 24px 0px rgba(0,0,0,0.35); 
+    }
+
+    &-ListItem{
+        color: $dark-gray;  
+        height: 64px;   
+        width: 163px;
+        padding-left: 23px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $search_input-border;
+
+        &:hover{
+            background-color: $search_input-border;
+        }
+    }
+}
+

@@ -1,0 +1,44 @@
+@import '../../assets/_styles';
+
+.Footer{
+    height: 98px;
+    width: 100%;
+    background-color: $footer_bg-color;
+    font-family: $robo_font;
+
+    &-Wrapper{
+        width: 1120px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+
+    &-Info{
+        width: 640px;
+        line-height: 24px;
+        
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    &-Sign{
+        display: flex;
+        align-items: center;
+    }
+
+    &-Logo{
+        width: 160px;
+        height: 50px;
+    }
+
+    &-Text{
+        width: 160px;
+        padding-left: 12px;
+        font-size: 12px;
+        line-height: 15px;
+        border-left: 1px solid #fff;
+    }
+}

@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Wrapper from "./components/Wrapper/Wrapper";
-import CardList from "./components/CardList/CardList"
+import SearchBar from './components/SearchBar/SearchBar';
+import Footer from './components/Footer/Footer';
+import CardList from './components/CardList/CardList';
+import Navigation from './components/Navigation/Navigation';
+
 const App: React.FC = () => {
   return (
-    <Wrapper>
-      <CardList/>
-    </Wrapper>
+    <Fragment>
+      <Navigation/>
+      <Wrapper>
+        <SearchBar/>
+        <CardList/>
+      </Wrapper>
+      <Footer/>
+    </Fragment>
   );
 }
 

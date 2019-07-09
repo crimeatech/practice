@@ -15,8 +15,9 @@
 
     margin-left: 102px;
 
-    padding-left: 15px;
     padding-right: 15px;
+
+    padding-left: 15px;
 
     color: #bdcbd8;
 
@@ -121,65 +122,66 @@
 
     }
 
+    &-Drop {
+        visibility: hidden;
 
-}
+        transition: margin-left 0.5s ease 0s;
 
-.RegionalSites-Drop {
-    visibility: hidden;
+        li {
+            display: flex;
 
-    transition: margin-left 0.5s ease 0s;
+            float: left;
 
-    li {
-        display: flex;
+            flex-direction: column;
 
-        float: left;
+            list-style-type: none;
 
-        flex-direction: column;
-
-        list-style-type: none;
-
+        }
     }
-}
 
-.RegionalSites-Drop-Show {
-    //display: flex;
-    position: absolute;
-    z-index: 950;
-    top: 48px;
+    &-Drop-Show {
+        //display: flex;
+        position: absolute;
 
-    visibility: visible;
+        z-index: 950;
 
-    margin-left: 103px;
+        top: 48px;
 
-    transition: margin-top 0.5s ease 0s;
+        visibility: visible;
 
-    li {
-        display: flex;
+        margin-left: 103px;
 
-        float: left;
+        transition: margin-top 0.5s ease 0s;
 
-        flex-direction: column;
+        li {
+            display: flex;
 
-        padding: 23px 83px 23px 23px;
+            float: left;
 
-        list-style-type: none;
+            flex-direction: column;
 
-        background-color: white;
+            padding: 23px 83px 23px 23px;
 
-        font-family: $robo-font;
+            list-style-type: none;
 
-        font-size: 13px;
-        
-        a{
-            text-decoration: none;
+            background-color: white;
+
+            font-family: $robo-font;
+
+            font-size: 13px;
+
+            a {
+                text-decoration: none;
+            }
+
         }
 
     }
-
 }
 
 .RegionalSitesAndDrop {
     float: left;
 
     height: 54px;
+
 }
