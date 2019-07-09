@@ -1,7 +1,8 @@
 import React from "react"
 import { cn } from '@bem-react/classname';
 import "./Logo.scss"
-import "../Header-NavBlock/Header-NavBlock"
+import "../Header-NavBlock/Header-NavBlock";
+
 
 class Logo extends React.Component{
 
