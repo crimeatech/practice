@@ -1,26 +1,13 @@
 @import '../../assets/_styles';
 @import '../../assets/_reset';
 
-.Wrapper{
-    
+.Wrapper{  
     font-family: $robo-font;
     margin: 0 auto;
     margin-top: 0px;
     width: 1120px;   
 }
-.Navigation {
-    width: 100%;
 
-    height: 54px;
-
-    margin: -8px 0;
-
-    border: 1px solid black;
-
-    background-color: #044da0;
-
-    font-family: $robo-font;
-}
 .Background{
     &-Top{  
         z-index: -1;
@@ -33,18 +20,5 @@
         &_gradient{
             background: linear-gradient(to bottom, $high-grad-color , $low-grad-color);
         }
-    }
-    
-    &-Bottom{      
-        z-index: -1;
-        position: absolute;
-        top: 550px;
-        left: 0px;
-        height: 534px;
-        width: 100%;
-
-        &_color_white{
-            background-color: $body_bg-color;
-        } 
     }
 }
