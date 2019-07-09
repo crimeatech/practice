@@ -8,9 +8,7 @@ export class ScrollUp extends Component {
     render() {
         const cnScrollUp = cn("ScrollUp")
         return (
-            <div className={cnScrollUp()} onClick={this.scroll}>
-                <div className={cnScrollUp("Arrow")}></div>
-            </div>
+            <div className={cnScrollUp()} onClick={this.scroll}></div>
         )
     }
 }
