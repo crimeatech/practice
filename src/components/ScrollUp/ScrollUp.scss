@@ -1,9 +1,7 @@
 @import '../../assets/_styles';
 
 .ScrollUp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
     position: fixed;
     bottom: 175px;
     right: 80px;
@@ -17,5 +15,9 @@
     &:hover{ 
         border-color: #87909a;
         background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxMCI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiAjMGI3N2RkOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDx0aXRsZT5wYWdlX3VwX2Fycm93X0hvdmVyPC90aXRsZT4gIDxnIGlkPSJleHBhbmQtbW9yZSI+ICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxLjg3IDEwIDggMy43OCAxNC4xMyAxMCAxNiA4LjExIDggMCAwIDguMTEgMS44NyAxMCIvPiAgPC9nPjwvc3ZnPg==);   
+    }
+
+    &_visible{
+        display: block;
     }
 }
