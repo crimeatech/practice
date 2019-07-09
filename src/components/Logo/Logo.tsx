@@ -1,17 +1,19 @@
 import React from "react"
+import { cn } from '@bem-react/classname';
 import "./Logo.scss"
 import "../Header-NavBlock/Header-NavBlock"
 
 class Logo extends React.Component{
 
     render(){
+        const cnLogo = cn("Header-Logo");
         return(
-           <a href="#"> <div className="Header-Logo">
+           <a href="#"> <div className={cnLogo()}>
                
-                <div className="Header-Logo-And-Text">
-               <span className="Header-Logo-Kindergarten"> Детские сады</span>
+                <div className={cnLogo("And-Text")}>
+               <span className={cnLogo("Kindergarten")}> Детские сады</span>
               
-                <span className="Header-Logo-Crimea">Республики Крым</span>
+                <span className={cnLogo("Crimea")}>Республики Крым</span>
                    </div>
                
             </div>

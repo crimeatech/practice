@@ -1,45 +1,83 @@
-.Header-Logo
-{ font-family: 'Open Sans';  font-size: 14px; 
-
+.Header-Logo {
     display: flex;
- float: left;  align-items: center; 
-//flex-wrap: nowrap;
-    //flex-direction: column;
-    //border: 1px black solid;
 
-    height: 95px;  text-decoration: none;  color: rgb(217, 222, 225);
+    float: left;
+
+    align-items: center;
+
+    height: 95px;
+
+    text-decoration: none;
+
+    color: rgb(217, 222, 225);
+
+    font-family: 'Open Sans';
+
+    font-size: 14px;
+
+    &::before {
+        display: inline-block;
+    
+        width: 50px;
+    
+        height: 59px;
+    
+        margin-right: 20px;
+    
+        content: '';
+    
+        background-image: url(../../assets/Logo.png);
+    }
+
 }
 
-.Header-Logo::before
-{
-    display: inline-block;  width: 50px;  height: 59px;  margin-right: 20px;
- content: '';  background-image: url(../../assets/Logo.png); 
+
+
+.Header-Logo-Kindergarten {
+    color: rgb(255, 255, 255);
+
+    font-family: 'Open Sans';
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    a {
+        width: 100%;
+    
+        color: rgb(255, 255, 255);
+    
+        font-family: 'Roboto';
+    
+        font-size: 20px;
+    
+        font-weight: bold;
+    
+        line-height: 1.2;
+    
+    }
 }
 
-.Header-Logo-Kindergarten
-{ font-family: 'Open Sans'; 
-    font-size: 20px;  font-weight: bold;  line-height: 1.2;
- color: rgb(255, 255, 255); 
+
+
+.Header-Logo-Crimea {
+    color: rgb(217, 222, 225);
+
+    font-family: 'Roboto';
+
+    font-size: 14px;
+
+    line-height: 1.714;
 }
 
-.Header-Logo-Kindergarten a
-{ font-family: 'Roboto'; 
-    font-size: 20px;  font-weight: bold;  line-height: 1.2;  width: 100%;
- color: rgb(255, 255, 255); 
-}
-
-.Header-Logo-Crimea
-{ font-family: 'Roboto'; 
-    font-size: 14px;  line-height: 1.714;
- color: rgb(217, 222, 225); 
-}
-
-.Header-NavBlock a
-{
+.Header-NavBlock a {
     text-decoration: none;
 }
 
-.Header-Logo-And-Text
-{
-    display: flex;  flex-direction: column;
+.Header-Logo-And-Text {
+    display: flex;
+
+    flex-direction: column;
 }

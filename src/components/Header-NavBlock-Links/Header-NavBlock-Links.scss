@@ -1,12 +1,17 @@
-.Header-NavBlock-Links{
-   display: flex;
-   align-items: center;
-}
-.Header-NavBlock-Links a{
-    color: white;
-    padding-left: 25px; 
-}
-.Header-NavBlock-Links a:hover{
-    color: white;
-    text-decoration: underline;
+.Header-NavBlock-Links {
+    display: flex;
+
+    align-items: center;
+
+    a {
+        padding-left: 25px;
+
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+
+            color: white;
+        }
+    }
 }

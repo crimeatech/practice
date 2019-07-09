@@ -1,0 +1,21 @@
+@import '../../assets/_styles';
+
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+.Navigation {
+    width: 100%;
+
+    height: 54px;
+
+    margin: -8px 0;
+
+    border: 1px solid black;
+
+    background-color: #044da0;
+
+    font-family: $robo-font;
+}
