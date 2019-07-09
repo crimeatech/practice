@@ -1,7 +1,7 @@
 @import '../../assets/_styles';
 
 .ForSleeping {
-    position: relative;
+   position: relative;
 
     display: flex;
 
@@ -9,13 +9,11 @@
 
     width: 220px;
 
-    height: 54px;
+    height: 53px;
 
-    margin-top: -54px;
+    margin-left: 556px;
 
-    margin-left: 847px;
-
-    padding-left: 16px;
+    padding-left: 15px;
 
     font-family: $robo-font;
 
@@ -28,7 +26,7 @@
 
         height: 20px;
 
-        margin-right: 11px;
+        margin-right: 9px;
 
         content: '';
 
@@ -61,7 +59,7 @@
 
             height: 20px;
 
-            margin-right: 11px;
+            margin-right: 9px;
 
             content: '';
 
