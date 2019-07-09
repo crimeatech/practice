@@ -127,6 +127,10 @@
 
         transition: margin-left 0.5s ease 0s;
 
+        position: absolute;
+
+        z-index: 950;
+
         li {
             display: flex;
 
