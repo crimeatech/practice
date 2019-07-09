@@ -1,11 +1,14 @@
 import React, { Fragment } from "react"
+import Navigation from "../Navigation/Navigation"
 import { cn } from '@bem-react/classname';
 import "./Wrapper.scss"
+
 
 class Wrapper extends React.Component{
     public render(){
         const cnWrapper=cn("Wrapper");
         const cnBackground=cn("Background");
+        const cnNavigation=cn("Navigation");
         return (
             <Fragment>
                 <div className={cnBackground()}>
@@ -14,8 +17,11 @@ class Wrapper extends React.Component{
                 </div>
                 <div className={cnWrapper()}>
                     {this.props.children}
+                
+                   
                 </div>
             </Fragment>
+
             );
         }
 }
