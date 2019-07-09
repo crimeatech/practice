@@ -1,3 +1,4 @@
+@import '../../assets/_styles';
 .Header-Logo {
     display: flex;
 
@@ -36,7 +37,7 @@
 .Header-Logo-Kindergarten {
     color: rgb(255, 255, 255);
 
-    font-family: "Open Sans";
+    font-family: $os-font;
 
     font-size: 20px;
 
@@ -65,7 +66,7 @@
 .Header-Logo-Crimea {
     color: rgb(217, 222, 225);
 
-    font-family: 'Roboto';
+    font-family: $robo-font;
 
     font-size: 14px;
 
@@ -81,18 +82,3 @@
 
     flex-direction: column;
 }
-
-
-.Обратная_связь {
-    font-size: 16px;
-    font-family: "Segoe UI";
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    line-height: 1.2;
-    text-align: left;
-    position: absolute;
-    left: 1406px;
-    top: 92.798px;
-    z-index: 249;
-  }
-  

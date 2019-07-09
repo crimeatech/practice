@@ -7,12 +7,16 @@ import "./Navigation.scss"
 class Navigation extends React.Component{
     public render(){
         const cnNavigation = cn("Navigation");
+        const cnBackgroundNavigation = cn("BackgroundNavigation");
         return (
+           <div className={cnBackgroundNavigation()}> 
             <div className={cnNavigation()}>
                 <RegionalSites/>
-                <UserCabinet/>
                 <ForSleeping/>
+                <UserCabinet/>
+                
             </div>
+        </div>
             );
         }
 }

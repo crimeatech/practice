@@ -3,19 +3,15 @@
 .RegionalSites {
     display: flex;
 
-    float: left;
-
     align-items: center;
 
-    width: 200x;
+    width: 177px;
 
-    height: 54px;
+    height: 53px;
 
     margin: 0px 0;
 
-    margin-left: 102px;
-
-    padding-right: 15px;
+    margin-left: -15px;
 
     padding-left: 15px;
 
@@ -51,9 +47,10 @@
 
         align-items: center;
 
-        width: 15px;
+        width: 17px;
 
-        height: 15px;
+        height: 17px;
+
 
         margin-right: 11px;
 
@@ -70,9 +67,10 @@
 
         align-items: center;
 
-        width: 15px;
+        width: 17px;
 
-        height: 15px;
+        height: 17px;
+
 
         margin-right: 11px;
 
@@ -144,16 +142,15 @@
     }
 
     &-Drop-Show {
-        //display: flex;
         position: absolute;
 
         z-index: 950;
 
-        top: 48px;
+        top: 53px;
 
         visibility: visible;
 
-        margin-left: 103px;
+        margin-left: -15px;
 
         transition: margin-top 0.5s ease 0s;
 
@@ -184,8 +181,6 @@
 }
 
 .RegionalSitesAndDrop {
-    float: left;
-
+    display: flex;
     height: 54px;
-
 }
