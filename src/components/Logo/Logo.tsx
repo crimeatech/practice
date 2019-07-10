@@ -9,7 +9,7 @@ class Logo extends React.Component{
     render(){
         const cnLogo = cn("Header-Logo");
         return(
-           <a href="#"> <div className={cnLogo()}>
+           <a href={"href"}> <div className={cnLogo()}>
                
                 <div className={cnLogo("And-Text")}>
                <span className={cnLogo("Kindergarten")}> Детские сады</span>

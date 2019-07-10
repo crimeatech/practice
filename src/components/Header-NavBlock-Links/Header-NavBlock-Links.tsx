@@ -9,8 +9,8 @@ class NavBlockLinks extends React.Component{
         const cnNavBlockLinks = cn("Header-NavBlock-Links");
         return(
            <div className={cnNavBlockLinks()}>
-           <a href="#">Публикации</a>
-           <a href="#">Обратная связь</a>
+           <a href={"href"}>Публикации</a>
+           <a href={"href"}>Обратная связь</a>
            </div>
         );
     }
