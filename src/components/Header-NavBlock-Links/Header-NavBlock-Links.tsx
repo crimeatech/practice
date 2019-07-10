@@ -24,11 +24,11 @@ class NavBlockLinks extends React.Component<{}, NavState>{
     render(){
         const cnNavBlockLinks = cn("Header-NavBlock-Links");
         return(
-                <div className={cnNavBlockLinks()}>
-                    <a href={"href"}>Публикации</a>
-                    <a href={"href"} onClick={this.showModal}>Обратная связь</a>
-                    {this.state.modal && <FeedbackForm close={this.closeModal}/>}
-                </div>
+            <div className={cnNavBlockLinks()}>
+                <a href={"href"}>Публикации</a>
+                <a href={"href"} onClick={this.showModal}>Обратная связь</a>
+                {this.state.modal && <FeedbackForm close={this.closeModal}/>}
+            </div>
         );
     }
 }
