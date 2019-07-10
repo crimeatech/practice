@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { cn } from '@bem-react/classname';
 import FeedbackForm from "../FeedbackForm/FeedbackForm";
 import "./Header-NavBlock-Links.scss"
@@ -24,13 +24,11 @@ class NavBlockLinks extends React.Component<{}, NavState>{
     render(){
         const cnNavBlockLinks = cn("Header-NavBlock-Links");
         return(
-            <Fragment>
                 <div className={cnNavBlockLinks()}>
                     <a href="#">Публикации</a>
                     <a href="#" onClick={this.showModal}>Обратная связь</a>
+                    {this.state.modal && <FeedbackForm close={this.closeModal}/>}
                 </div>
-                {this.state.modal && <FeedbackForm close={this.closeModal}/>}
-           </Fragment>
         );
     }
 }
