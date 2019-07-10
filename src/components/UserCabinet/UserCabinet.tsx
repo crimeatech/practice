@@ -6,7 +6,7 @@ class UserCabinet extends React.Component {
       
       return (
         <div className="UserCabinet">
-                <a href="#">Личный кабинет</a>
+                <a href={"href"}>Личный кабинет</a>
         </div>
       );
       
