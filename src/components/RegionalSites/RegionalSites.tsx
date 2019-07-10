@@ -63,6 +63,8 @@ class RegionalSites extends React.Component<AppProps,AppState> {
       if (this.state.isOpen && !this.toggleContainer.current.contains(event.target)) {
         this.setState({ isOpen: false });
         this.hide();
+        var classNameSelected = (this.state.classClicked==="RegionalSites-Selected")?"RegionalSites-Selected-Clicked":"RegionalSites-Selected";
+        this.setState({classClicked: classNameSelected});
       }
       
     }
