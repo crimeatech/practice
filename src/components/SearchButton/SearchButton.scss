@@ -11,8 +11,14 @@
     border-radius: 2px;
     font-size: 16px;
     margin: 9px;
+    border: 0px;
 
     &:hover{
         background-color: #f25162;
+    }
+
+    &:focus{
+        outline-offset: 0px;
+        outline: 0px;
     }
 }

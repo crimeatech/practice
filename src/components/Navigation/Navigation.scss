@@ -1,0 +1,26 @@
+@import '../../assets/_styles';
+
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+.Navigation {
+    display:flex;
+
+    max-width: 1120px;
+
+    height: 53px;
+
+    margin: 0px auto;
+
+    font-family: $robo-font;
+
+    
+}
+.BackgroundNavigation{
+    background-color: #044da0;
+    width: 100%;
+
+}

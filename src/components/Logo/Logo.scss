@@ -1,0 +1,84 @@
+@import '../../assets/_styles';
+.Header-Logo {
+    display: flex;
+
+    float: left;
+
+    align-items: center;
+
+    height: 95px;
+
+    text-decoration: none;
+
+    color: rgb(217, 222, 225);
+
+    font-family: 'Open Sans';
+
+    font-size: 14px;
+
+    &::before {
+        display: inline-block;
+    
+        width: 50px;
+    
+        height: 59px;
+    
+        margin-right: 20px;
+    
+        content: '';
+    
+        background-image: url(../../assets/Logo.png);
+    }
+
+}
+
+
+
+.Header-Logo-Kindergarten {
+    color: rgb(255, 255, 255);
+
+    font-family: $os-font;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    a {
+        width: 100%;
+    
+        color: rgb(255, 255, 255);
+    
+        font-family: "Open Sans";
+    
+        font-size: 20px;
+    
+        font-weight: bold;
+    
+        line-height: 1.2;
+    
+    }
+}
+
+
+
+.Header-Logo-Crimea {
+    color: rgb(217, 222, 225);
+
+    font-family: $robo-font;
+
+    font-size: 14px;
+
+    line-height: 1.714;
+}
+
+.Header-NavBlock a {
+    text-decoration: none;
+}
+
+.Header-Logo-And-Text {
+    display: flex;
+
+    flex-direction: column;
+}
