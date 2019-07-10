@@ -1,11 +1,11 @@
-import React, { createRef, RefObject }  from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react'
+//import ReactDOM from 'react-dom'
 import "./RegionalSites.scss"
 
 //interface MyComponentState { visible : boolean }
 interface AppProps {someMyValue?: boolean}
 interface AppState {class?: string, isOpen?:boolean}
-class RegionalSites extends React.Component<AppProps,AppState,any> {
+class RegionalSites extends React.Component<AppProps,AppState> {
  // toggleContainer :RefObject<HTMLDivElement>;
   constructor(props: any){
     super(props);
@@ -16,7 +16,7 @@ class RegionalSites extends React.Component<AppProps,AppState,any> {
     handleClick(e:any){
      var className = (this.state.class==="RegionalSites-Drop")?"RegionalSites-Drop-Show":"RegionalSites-Drop";
       this.setState({class: className});
-      if(this.state.isOpen==false){
+      if(this.state.isOpen===false){
         this.setState({isOpen:true});
        
       }
@@ -30,13 +30,13 @@ class RegionalSites extends React.Component<AppProps,AppState,any> {
         
         <div className="RegionalSitesAndDrop">
         <div className="RegionalSites" >
-               <a href="#" className="RegionalSites-Selected" onClick={this.handleClick}>Областные сайты</a>
+               <a  href="#"className="RegionalSites-Selected" onClick={this.handleClick}>Областные сайты</a>
                </div>
                
                 <div className={this.state.class} >
                  <ul>
                     <li>
-                      <a href="#">Портал Правительства Республики Крым</a>
+                      <a href={"href"}>Портал Правительства Республики Крым</a>
                     </li>
                   </ul>
                 </div>

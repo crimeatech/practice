@@ -6,7 +6,7 @@ class ForSleeping extends React.Component {
       
       return (
         <div className="ForSleeping">
-                <a href="#">Версия для слабовидящих</a>
+                <a href={"href"}>Версия для слабовидящих</a>
         </div>
       );
       
