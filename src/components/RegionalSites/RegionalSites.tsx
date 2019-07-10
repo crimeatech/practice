@@ -1,36 +1,81 @@
-import React from 'react'
-//import ReactDOM from 'react-dom'
+import React,{RefObject} from 'react'
 import "./RegionalSites.scss"
+
 
 //interface MyComponentState { visible : boolean }
 interface AppProps {someMyValue?: boolean}
-interface AppState {class?: string, isOpen?:boolean}
+interface AppState {class?: string,classClicked:string, isOpen?:boolean}
 class RegionalSites extends React.Component<AppProps,AppState> {
- // toggleContainer :RefObject<HTMLDivElement>;
-  constructor(props: any){
+ toggleContainer : RefObject<any>;
+  
+ constructor(props: any){
     super(props);
     this.state={class: "RegionalSites-Drop",
-     isOpen: false };
-    this.handleClick = this.handleClick.bind(this);
+    classClicked: "RegionalSites-Selected" ,
+     isOpen: false }
+    
+     this.hide = this.hide.bind(this);
+     this.change = this.change.bind(this);
+     this.SelectedClick = this.SelectedClick.bind(this);
+    this.toggleContainer = React.createRef();
+    this.onClickHandler = this.onClickHandler.bind(this);
+    this.onClickOutsideHandler = this.onClickOutsideHandler.bind(this);
   }
-    handleClick(e:any){
-     var className = (this.state.class==="RegionalSites-Drop")?"RegionalSites-Drop-Show":"RegionalSites-Drop";
-      this.setState({class: className});
-      if(this.state.isOpen===false){
-        this.setState({isOpen:true});
-       
-      }
-    else this.setState({isOpen: false})
+    hide(){
+     
+     if(this.state.class==="RegionalSites-Drop-Show")
+     { this.setState({class: "RegionalSites-Drop"});
+    
+    }
 
     }
+    change(){
+      var className = (this.state.class==="RegionalSites-Drop")?"RegionalSites-Drop-Show":"RegionalSites-Drop";
+       this.setState({class: className});
+       var classNameSelected = (this.state.classClicked==="RegionalSites-Selected")?"RegionalSites-Selected-Clicked":"RegionalSites-Selected";
+       this.setState({classClicked: classNameSelected});
+ 
+     }
+   
+     SelectedClick(){
+       if(this.state.isOpen===true){
+         this.setState({classClicked: "RegionalSites-Selected-Clicked"})
+       } else this.setState({classClicked: "RegionalSites-Selected"})
+     }
+
+    componentDidMount() {
+      window.addEventListener('click', this.onClickOutsideHandler);
+    }
+  
+    componentWillUnmount() {
+      window.removeEventListener('click', this.onClickOutsideHandler);
+    }
+  
+    onClickHandler() {
+      this.setState(currentState => ({
+        isOpen: !currentState.isOpen
+      }));
+      this.change();
+      
+    }
+  
+    onClickOutsideHandler(event:any) {
+      if (this.state.isOpen && !this.toggleContainer.current.contains(event.target)) {
+        this.setState({ isOpen: false });
+        this.hide();
+      }
+      
+    }
+
+   
 
     render() {
       
       return (
         
-        <div className="RegionalSitesAndDrop">
+        <div className="RegionalSitesAndDrop" ref={this.toggleContainer} onClick={this.onClickHandler}>
         <div className="RegionalSites" >
-               <a  href="#"className="RegionalSites-Selected" onClick={this.handleClick}>Областные сайты</a>
+               <a  href="#"className={this.state.classClicked}  >Областные сайты</a>{}
                </div>
                
                 <div className={this.state.class} >
@@ -42,6 +87,7 @@ class RegionalSites extends React.Component<AppProps,AppState> {
                 </div>
          
         </div>
+       
       );
       
     }
