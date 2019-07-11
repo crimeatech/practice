@@ -1,5 +1,5 @@
 @import '../../assets/_styles';
-.Header-Logo {
+.NavBlock-Logo {
     display: flex;
 
     float: left;
@@ -34,7 +34,7 @@
 
 
 
-.Header-Logo-Kindergarten {
+.NavBlock-Logo-Kindergarten {
     color: rgb(255, 255, 255);
 
     font-family: $os-font;
@@ -61,9 +61,7 @@
     }
 }
 
-
-
-.Header-Logo-Crimea {
+.NavBlock-Logo-Crimea {
     color: rgb(217, 222, 225);
 
     font-family: $robo-font;
@@ -73,11 +71,11 @@
     line-height: 1.714;
 }
 
-.Header-NavBlock a {
+.NavBlock-NavBlock a {
     text-decoration: none;
 }
 
-.Header-Logo-And-Text {
+.NavBlock-Logo-And-Text {
     display: flex;
 
     flex-direction: column;

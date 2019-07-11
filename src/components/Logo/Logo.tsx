@@ -1,13 +1,14 @@
 import React from "react"
 import { cn } from '@bem-react/classname';
 import "./Logo.scss"
-import "../Header-NavBlock/Header-NavBlock";
+import "../NavBlock/NavBlock";
 
 
 class Logo extends React.Component{
 
     render(){
-        const cnLogo = cn("Header-Logo");
+        const cnLogo = cn("NavBlock-Logo");
+        
         return(
            <a href={"href"}> <div className={cnLogo()}>
                

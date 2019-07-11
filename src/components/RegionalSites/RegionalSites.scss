@@ -36,7 +36,7 @@
     }
 
     &:hover {
-        color: white;
+        //color: white;
 
         background-color: #033a78;
 
@@ -181,8 +181,15 @@
 
         }
     }
+&_opened{
+&:hover a{
+    color: #bdcbd8;
+}
 
-    &-Drop-Show {
+}
+
+
+    &-Drop_opened {
         position: absolute;
 
         z-index: 950;
@@ -227,7 +234,7 @@
 }
 
 
-.RegionalSites-Selected-Clicked{
+.RegionalSites-Selected_opened{
     display: flex;
         align-items: center;
     width: 207px;
@@ -281,5 +288,15 @@
         box-shadow: 0 0 1px #f00;
 
     }
+&:hover::after{
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxMCI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiAjMGI3N2RkOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDx0aXRsZT5wYWdlX3VwX2Fycm93X0hvdmVyPC90aXRsZT4gIDxnIGlkPSJleHBhbmQtbW9yZSI+ICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxLjg3IDEwIDggMy43OCAxNC4xMyAxMCAxNiA4LjExIDggMCAwIDguMTEgMS44NyAxMCIvPiAgPC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+
+    box-shadow: 0 0 1px #f00;
+}
+    &:hover{
+        color: #bdcbd8;
+    }
+    
+
     
 }
