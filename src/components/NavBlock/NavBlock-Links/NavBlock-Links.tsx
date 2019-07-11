@@ -28,7 +28,7 @@ class NavBlockLinks extends React.Component<{}, NavState>{
         return(
             <div className={cnNavBlockLinks()}>
                 <a href={"href"}>Публикации</a>
-                <a href="#" onClick={this.showModal}>Обратная связь</a>
+                <p onClick={this.showModal}>Обратная связь</p>
                 {this.state.modal && <FeedbackForm close={this.closeModal}/>}
             </div>
         );
