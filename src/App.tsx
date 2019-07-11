@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import CardList from './components/CardList/CardList';
 import ScrollUp from './components/ScrollUp/ScrollUp';
 import Navigation from './components/Navigation/Navigation';
+import InfoBlock from './components/InfoBlock/InfoBlock';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <Wrapper>
         <NavBlock/>
         <SearchBar/>
+        <InfoBlock/>
         <CardList/>
       </Wrapper>
       <ScrollUp/>

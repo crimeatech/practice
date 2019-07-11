@@ -1,0 +1,38 @@
+@import '../../assets/_styles';
+
+.InfoBlock {
+    display: flex;
+    
+    &-Title {
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-family: $os-font;
+        color: #ffffff;
+        
+        &_h1 {
+            font-size: 56pt;
+        }
+        
+        &_h2 {
+            font-size: 32pt;
+        }
+    }
+    
+    &-Content {
+        font-family: $os-font;
+        font-size: 16pt;
+        color: #d9dee1;
+    }
+    
+    & > div:nth-child(1) {
+        // width: calc(66% + 30px);
+        flex-shrink: 1.3;
+        flex-grow: 2;
+    }
+    
+    & > div:nth-child(2) {
+        // width: 33%;
+        flex-grow: 1;
+        margin-left: 30px;
+    }
+}
