@@ -41,7 +41,7 @@ class RegionalSites extends React.Component<AppProps,AppState> {
         
         <div className={cnRegionalSitesAndDrop()} ref={this.toggleContainer} onClick={this.onClickHandler}>
         <div className={cnRegionalSites({opened: this.state.isOpen})}>
-               <a  href="#"className={cnRegionalSites("Selected",{opened: this.state.isOpen})}>Областные сайты</a>
+               <span className={cnRegionalSites("Selected",{opened: this.state.isOpen})}>Областные сайты</span>
                </div>
                
                 <div className={cnRegionalSites("Drop",{opened: this.state.isOpen})} >

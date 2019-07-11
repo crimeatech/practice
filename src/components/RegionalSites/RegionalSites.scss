@@ -21,22 +21,21 @@
 
     font-size: 14px;
 
-    a {
+    span {
         text-decoration: none;
 
         color: #bdcbd8;
 
     }
 
-    &:hover a {
-        text-decoration: none;
+    &:hover span {
 
         color: white;
+        cursor: pointer;
 
     }
 
     &:hover {
-        //color: white;
 
         background-color: #033a78;
 
@@ -182,7 +181,7 @@
         }
     }
 &_opened{
-&:hover a{
+&:hover span{
     color: #bdcbd8;
 }
 
@@ -236,17 +235,15 @@
 
 .RegionalSites-Selected_opened{
     display: flex;
-        align-items: center;
+    align-items: center;
     width: 207px;
     margin-left: -15px;
     padding-left: 15px;
     height: 53px;
     background-color: #033a78;
  
-    & a {
-        text-decoration: none;
-
-        color: white;
+    & span {
+       color: #bdcbd8;
 
     }
 
