@@ -1,8 +1,10 @@
 import React from "react"
 import { cn } from '@bem-react/classname';
-import FeedbackForm from "../FeedbackForm/FeedbackForm";
-import "./Header-NavBlock-Links.scss"
-import "./Header-NavBlock-Links"
+import "./NavBlock-Links.scss"
+import "./NavBlock-Links"
+import FeedbackForm from "../../FeedbackForm/FeedbackForm";
+import "./NavBlock-Links.scss"
+import "./NavBlock-Links"
 
 
 interface NavState {
@@ -22,7 +24,7 @@ class NavBlockLinks extends React.Component<{}, NavState>{
     closeModal = () => this.setState({modal: false});
 
     render(){
-        const cnNavBlockLinks = cn("Header-NavBlock-Links");
+        const cnNavBlockLinks = cn("NavBlock-Links");
         return(
             <div className={cnNavBlockLinks()}>
                 <a>Публикации</a>
