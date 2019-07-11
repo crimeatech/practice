@@ -6,9 +6,7 @@ export class Button extends Component {
     render() {
         const cnButton = cn("Button");
         return (
-            <div className={cnButton()}>
-                Найти заявление
-            </div>
+            <button className={cnButton()}>Найти заявление</button>
         )
     }
 }

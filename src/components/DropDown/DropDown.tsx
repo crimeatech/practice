@@ -25,9 +25,9 @@ export class DropDown extends Component<{},DropDownState> {
     render() {
         const cnDropDown = cn("DropDown");
         return (
-            <div className={cnDropDown({opened: this.state.isOpened})}>
+            <div className={cnDropDown({opened: this.state.isOpened})} onClick={this.toggle}>
                 <div className={cnDropDown("Selected")}>{this.state.items[this.state.selected]}</div>
-                <div className={cnDropDown("Arrow", {opened: this.state.isOpened})} onClick={this.toggle}></div>       
+                <div className={cnDropDown("Arrow", {opened: this.state.isOpened})}></div>       
                 {
                     this.state.isOpened && 
                     <div className={cnDropDown("List")}>
