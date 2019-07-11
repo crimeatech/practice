@@ -9,9 +9,9 @@ interface CardProps {
 }
 
 class Card extends React.Component<CardProps, {}>{
-    render(){
+    render() {
         const cnCard = cn("Card");
-        return(
+        return (
             <div className={cnCard()}>
                 <img className={cnCard("Image")} src={this.props.banner} alt="city"/>
                 <div className={cnCard("Info")}>
